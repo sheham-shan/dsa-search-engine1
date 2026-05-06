@@ -1,0 +1,32 @@
+{
+  "name": "az-dsa-search-engine",
+  "version": "1.0.0",
+  "description": "A DSA problem search engine leveraging web scraping, efficient data storage, and a Node.js backend implementing TF-IDF to provide relevant results for user queries via a React web interface.",
+  "homepage": "https://github.com/aaqib605/az-dsa-search-engine#readme",
+  "bugs": {
+    "url": "https://github.com/aaqib605/az-dsa-search-engine/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaqib605/az-dsa-search-engine.git"
+  },
+  "license": "ISC",
+  "author": "Aaqib Javaid",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "scrape": "node scrape.js",
+    "merge": "node utils/merge.js",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "natural": "^8.1.0",
+    "puppeteer": "^24.10.2",
+    "stopword": "^3.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
