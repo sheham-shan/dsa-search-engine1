@@ -1,0 +1,552 @@
+[
+  {
+    "title": "Fallen Leaves",
+    "url": "https://codeforces.com/problemset/problem/2227/H",
+    "description": "Yousef is given a tree∗^{\\text{∗}} of nn vertices numbered from 11 to nn.Let SS be the set of all leaves†^{\\text{†}} of the given tree (this set is determined from the original tree and does not change).Yousef repeats the following process until the number of unchosen vertices is at most one:   Choose two distinct vertices u,v∈Su, v \\in S that have not been chosen before.  Add d(u,v)d(u, v) to the total cost, where d(u,v)d(u, v) is the number of edges on the simple path between uu and vv.  Mark uu and vv as chosen. Your task is to help Yousef determine the minimum possible total cost achievable after the process ends.∗^{\\text{∗}}A tree is an undirected connected graph in which there are no cycles.†^{\\text{†}}A leaf of a tree is a vertex that is connected to at most one other vertex."
+  },
+  {
+    "title": "Drowning",
+    "url": "https://codeforces.com/problemset/problem/2227/G",
+    "description": "Yousef has an array aa consisting of nn positive integers. He defines a reduction operation on any array cc of length |c|≥3|c| \\ge 3:  Choose an index ii (1<i<|c|1  \\lt  i  \\lt  |c|) such that ci−1+ci+1>cic_{i-1} + c_{i+1}  \\gt  c_i.  Replace the triplet {ci−1,ci,ci+1}\\{c_{i-1}, c_i, c_{i+1}\\} with a single integer x=ci−1−ci+ci+1x = c_{i-1} - c_i + c_{i+1}. The new integer xx occupies the position previously held by the triplet, and the length of the array decreases by 22.An array is considered good if it can be reduced to a single element by performing the operation above zero or more times. Note that an array of length 11 is always good.Yousef wants you to count the number of pairs (l,r)(l, r) (1≤l≤r≤n1 \\le l \\le r \\le n) such that the subarray a[l,r]a[l, r] is good."
+  },
+  {
+    "title": "It Just Keeps Going Sideways",
+    "url": "https://codeforces.com/problemset/problem/2227/F",
+    "description": "Yousef has $$$n$$$ columns of cubes standing side by side. The $$$i$$$-th column contains $$$a_i$$$ identical unit cubes stacked vertically. Initially gravity pulls cubes downwards, so every column $$$i$$$ contains exactly $$$a_i$$$ cubes at heights $$$1, 2, \\dots, a_i$$$.Suddenly, gravity shifts to the right. Each cube slides horizontally as far to the right as possible. A cube cannot pass through or overlap other cubes, and it must remain at its original height. The final configuration is uniquely determined by the initial heights.    Before and after applying rightward gravity. Before the gravity shift, Yousef may perform at most one operation: choose an index $$$i$$$ and decrease $$$a_i$$$ by $$$1$$$ (i.e. remove one cube from that column). He may also choose to do nothing.A cube's movement distance is defined as $$$|j - i|$$$, where $$$i$$$ is its original column index and $$$j$$$ is its column index after the gravity shift.Find the maximum possible total movement distance (the sum of the movement distances of all remaining cubes) Yousef can achieve."
+  },
+  {
+    "title": "It All Went Sideways",
+    "url": "https://codeforces.com/problemset/problem/2227/E",
+    "description": "Yousef has nn columns of cubes standing side by side. The ii-th column contains aia_i identical unit cubes stacked vertically. Initially gravity pulls cubes downwards, so every column ii contains exactly aia_i cubes at heights 1,2,…,ai1, 2, \\dots, a_i.Suddenly, gravity shifts to the right. Each cube slides horizontally as far to the right as possible. A cube cannot pass through or overlap other cubes, and it must remain at its original height. The final configuration is uniquely determined by the initial heights.    Before and after applying rightward gravity. Before the gravity shift, Yousef may perform at most one operation: choose an index ii and decrease aia_i by 11 (i.e. remove one cube from that column). He may also choose to do nothing.A cube is said to move if its column index after the gravity shift is different from its original column index.Find the maximum possible number of cubes that will move after the gravity shift, assuming Yousef applies the single decrease optimally (or chooses not to apply it)."
+  },
+  {
+    "title": "Palindromex",
+    "url": "https://codeforces.com/problemset/problem/2227/D",
+    "description": "Yousef has given you an array aa of 2n2n integers. Every integer x∈[0,n−1]x \\in [0, n - 1] appears exactly twice in the array.Your task is to find a subarray al,al+1,…,ara_l, a_{l + 1}, \\dots, a_r that is a palindrome∗^{\\text{∗}} such that its mex(al,al+1,…,ar)\\operatorname{mex}(a_l, a_{l + 1}, \\dots, a_r)†^{\\text{†}} is maximized. Output this maximum possible value.∗^{\\text{∗}}A palindrome is a string that reads the same backward as forward, for example, strings \"z\", \"aaa\", \"aba\", \"abccba\" are palindromes, but strings \"codeforces\", \"reality\", \"ab\" are not.†^{\\text{†}}The mex\\operatorname{mex} (minimum excludant) of an array of integers is defined as the smallest non-negative integer which does not occur in the array. For example:   The mex\\operatorname{mex} of [2,2,1][2,2,1] is 00, because 00 does not belong to the array.  The mex\\operatorname{mex} of [3,1,0,1][3,1,0,1] is 22, because 00 and 11 belong to the array, but 22 does not.  The mex\\operatorname{mex} of [0,3,1,2][0,3,1,2] is 44, because 00, 11, 22 and 33 belong to the array, but 44 does not. "
+  },
+  {
+    "title": "Fallen Leaves",
+    "url": "https://codeforces.com/problemset/problem/2227/H",
+    "description": "Yousef is given a tree∗^{\\text{∗}} of nn vertices numbered from 11 to nn.Let SS be the set of all leaves†^{\\text{†}} of the given tree (this set is determined from the original tree and does not change).Yousef repeats the following process until the number of unchosen vertices is at most one:   Choose two distinct vertices u,v∈Su, v \\in S that have not been chosen before.  Add d(u,v)d(u, v) to the total cost, where d(u,v)d(u, v) is the number of edges on the simple path between uu and vv.  Mark uu and vv as chosen. Your task is to help Yousef determine the minimum possible total cost achievable after the process ends.∗^{\\text{∗}}A tree is an undirected connected graph in which there are no cycles.†^{\\text{†}}A leaf of a tree is a vertex that is connected to at most one other vertex."
+  },
+  {
+    "title": "Drowning",
+    "url": "https://codeforces.com/problemset/problem/2227/G",
+    "description": "Yousef has an array aa consisting of nn positive integers. He defines a reduction operation on any array cc of length |c|≥3|c| \\ge 3:  Choose an index ii (1<i<|c|1  \\lt  i  \\lt  |c|) such that ci−1+ci+1>cic_{i-1} + c_{i+1}  \\gt  c_i.  Replace the triplet {ci−1,ci,ci+1}\\{c_{i-1}, c_i, c_{i+1}\\} with a single integer x=ci−1−ci+ci+1x = c_{i-1} - c_i + c_{i+1}. The new integer xx occupies the position previously held by the triplet, and the length of the array decreases by 22.An array is considered good if it can be reduced to a single element by performing the operation above zero or more times. Note that an array of length 11 is always good.Yousef wants you to count the number of pairs (l,r)(l, r) (1≤l≤r≤n1 \\le l \\le r \\le n) such that the subarray a[l,r]a[l, r] is good."
+  },
+  {
+    "title": "It Just Keeps Going Sideways",
+    "url": "https://codeforces.com/problemset/problem/2227/F",
+    "description": "Yousef has nn columns of cubes standing side by side. The ii-th column contains aia_i identical unit cubes stacked vertically. Initially gravity pulls cubes downwards, so every column ii contains exactly aia_i cubes at heights 1,2,…,ai1, 2, \\dots, a_i.Suddenly, gravity shifts to the right. Each cube slides horizontally as far to the right as possible. A cube cannot pass through or overlap other cubes, and it must remain at its original height. The final configuration is uniquely determined by the initial heights.    Before and after applying rightward gravity. Before the gravity shift, Yousef may perform at most one operation: choose an index ii and decrease aia_i by 11 (i.e. remove one cube from that column). He may also choose to do nothing.A cube's movement distance is defined as |j−i||j - i|, where ii is its original column index and jj is its column index after the gravity shift.Find the maximum possible total movement distance (the sum of the movement distances of all remaining cubes) Yousef can achieve."
+  },
+  {
+    "title": "It All Went Sideways",
+    "url": "https://codeforces.com/problemset/problem/2227/E",
+    "description": "Yousef has nn columns of cubes standing side by side. The ii-th column contains aia_i identical unit cubes stacked vertically. Initially gravity pulls cubes downwards, so every column ii contains exactly aia_i cubes at heights 1,2,…,ai1, 2, \\dots, a_i.Suddenly, gravity shifts to the right. Each cube slides horizontally as far to the right as possible. A cube cannot pass through or overlap other cubes, and it must remain at its original height. The final configuration is uniquely determined by the initial heights.    Before and after applying rightward gravity. Before the gravity shift, Yousef may perform at most one operation: choose an index ii and decrease aia_i by 11 (i.e. remove one cube from that column). He may also choose to do nothing.A cube is said to move if its column index after the gravity shift is different from its original column index.Find the maximum possible number of cubes that will move after the gravity shift, assuming Yousef applies the single decrease optimally (or chooses not to apply it)."
+  },
+  {
+    "title": "Palindromex",
+    "url": "https://codeforces.com/problemset/problem/2227/D",
+    "description": "Yousef has given you an array $$$a$$$ of $$$2n$$$ integers. Every integer $$$x \\in [0, n - 1]$$$ appears exactly twice in the array.Your task is to find a subarray $$$a_l, a_{l + 1}, \\dots, a_r$$$ that is a palindrome$$$^{\\text{∗}}$$$ such that its $$$\\operatorname{mex}(a_l, a_{l + 1}, \\dots, a_r)$$$$$$^{\\text{†}}$$$ is maximized. Output this maximum possible value.$$$^{\\text{∗}}$$$A palindrome is a string that reads the same backward as forward, for example, strings \"z\", \"aaa\", \"aba\", \"abccba\" are palindromes, but strings \"codeforces\", \"reality\", \"ab\" are not.$$$^{\\text{†}}$$$The $$$\\operatorname{mex}$$$ (minimum excludant) of an array of integers is defined as the smallest non-negative integer which does not occur in the array. For example:   The $$$\\operatorname{mex}$$$ of $$$[2,2,1]$$$ is $$$0$$$, because $$$0$$$ does not belong to the array.  The $$$\\operatorname{mex}$$$ of $$$[3,1,0,1]$$$ is $$$2$$$, because $$$0$$$ and $$$1$$$ belong to the array, but $$$2$$$ does not.  The $$$\\operatorname{mex}$$$ of $$$[0,3,1,2]$$$ is $$$4$$$, because $$$0$$$, $$$1$$$, $$$2$$$ and $$$3$$$ belong to the array, but $$$4$$$ does not. "
+  },
+  {
+    "title": "Count Smaller Elements With Opposite Parity",
+    "url": "https://leetcode.com/problems/count-smaller-elements-with-opposite-parity/",
+    "description": ""
+  },
+  {
+    "title": "Sum of Primes Between Number and Its Reverse",
+    "url": "https://leetcode.com/problems/sum-of-primes-between-number-and-its-reverse/",
+    "description": ""
+  },
+  {
+    "title": "Zigzag Level Sum of Binary Tree",
+    "url": "https://leetcode.com/problems/zigzag-level-sum-of-binary-tree/",
+    "description": ""
+  },
+  {
+    "title": "Count Indices With Opposite Parity",
+    "url": "https://leetcode.com/problems/count-indices-with-opposite-parity/",
+    "description": ""
+  },
+  {
+    "title": "Maximize Fixed Points After Deletions",
+    "url": "https://leetcode.com/problems/maximize-fixed-points-after-deletions/",
+    "description": ""
+  },
+  {
+    "title": "Compare Sums of Bitonic Parts",
+    "url": "https://leetcode.com/problems/compare-sums-of-bitonic-parts/",
+    "description": ""
+  },
+  {
+    "title": "Minimum Cost to Move Between Indices",
+    "url": "https://leetcode.com/problems/minimum-cost-to-move-between-indices/",
+    "description": ""
+  },
+  {
+    "title": "Valid Elements in an Array",
+    "url": "https://leetcode.com/problems/valid-elements-in-an-array/",
+    "description": ""
+  },
+  {
+    "title": "Maximum Team Size with Overlapping Intervals",
+    "url": "https://leetcode.com/problems/maximum-team-size-with-overlapping-intervals/",
+    "description": ""
+  },
+  {
+    "title": "K-th Smallest Remaining Even Integer in Subarray Queries",
+    "url": "https://leetcode.com/problems/k-th-smallest-remaining-even-integer-in-subarray-queries/",
+    "description": ""
+  },
+  {
+    "title": "Valid Digit Number",
+    "url": "https://leetcode.com/problems/valid-digit-number/",
+    "description": ""
+  },
+  {
+    "title": "Smallest Stable Index II",
+    "url": "https://leetcode.com/problems/smallest-stable-index-ii/",
+    "description": ""
+  },
+  {
+    "title": "Smallest Stable Index I",
+    "url": "https://leetcode.com/problems/smallest-stable-index-i/",
+    "description": ""
+  },
+  {
+    "title": "Multi Source Flood Fill",
+    "url": "https://leetcode.com/problems/multi-source-flood-fill/",
+    "description": ""
+  },
+  {
+    "title": "Sort Vowels by Frequency",
+    "url": "https://leetcode.com/problems/sort-vowels-by-frequency/",
+    "description": ""
+  },
+  {
+    "title": "Count Digit Appearances",
+    "url": "https://leetcode.com/problems/count-digit-appearances/",
+    "description": ""
+  },
+  {
+    "title": "Count Connected Subgraphs with Even Node Sum",
+    "url": "https://leetcode.com/problems/count-connected-subgraphs-with-even-node-sum/",
+    "description": ""
+  },
+  {
+    "title": "Maximum Value of Concatenated Binary Segments",
+    "url": "https://leetcode.com/problems/maximum-value-of-concatenated-binary-segments/",
+    "description": ""
+  },
+  {
+    "title": "Minimum Operations to Transform Array into Alternating Prime",
+    "url": "https://leetcode.com/problems/minimum-operations-to-transform-array-into-alternating-prime/",
+    "description": ""
+  },
+  {
+    "title": "Minimum Operations to Make All Grid Elements Equal",
+    "url": "https://leetcode.com/problems/minimum-operations-to-make-all-grid-elements-equal/",
+    "description": ""
+  },
+  {
+    "title": "Traffic Signal Color",
+    "url": "https://leetcode.com/problems/traffic-signal-color/",
+    "description": ""
+  },
+  {
+    "title": "Mirror Frequency Distance",
+    "url": "https://leetcode.com/problems/mirror-frequency-distance/",
+    "description": ""
+  },
+  {
+    "title": "Find the Degree of Each Vertex",
+    "url": "https://leetcode.com/problems/find-the-degree-of-each-vertex/",
+    "description": ""
+  },
+  {
+    "title": "Minimum Operations to Make Array Non Decreasing",
+    "url": "https://leetcode.com/problems/minimum-operations-to-make-array-non-decreasing/",
+    "description": ""
+  },
+  {
+    "title": "Valid Subarrays With Exactly One Peak",
+    "url": "https://leetcode.com/problems/valid-subarrays-with-exactly-one-peak/",
+    "description": ""
+  },
+  {
+    "title": "Integers With Multiple Sum of Two Cubes",
+    "url": "https://leetcode.com/problems/integers-with-multiple-sum-of-two-cubes/",
+    "description": ""
+  },
+  {
+    "title": "Design Event Manager",
+    "url": "https://leetcode.com/problems/design-event-manager/",
+    "description": ""
+  },
+  {
+    "title": "Angles of a Triangle",
+    "url": "https://leetcode.com/problems/angles-of-a-triangle/",
+    "description": ""
+  },
+  {
+    "title": "Longest Balanced Substring After One Swap",
+    "url": "https://leetcode.com/problems/longest-balanced-substring-after-one-swap/",
+    "description": ""
+  },
+  {
+    "title": "First Matching Character From Both Ends",
+    "url": "https://leetcode.com/problems/first-matching-character-from-both-ends/",
+    "description": ""
+  },
+  {
+    "title": "Minimum Operations to Achieve At Least K Peaks",
+    "url": "https://leetcode.com/problems/minimum-operations-to-achieve-at-least-k-peaks/",
+    "description": ""
+  },
+  {
+    "title": "Reverse K Subarrays",
+    "url": "https://leetcode.com/problems/reverse-k-subarrays/",
+    "description": ""
+  },
+  {
+    "title": "Maximum Sum of Alternating Subsequence With Distance at Least K",
+    "url": "https://leetcode.com/problems/maximum-sum-of-alternating-subsequence-with-distance-at-least-k/",
+    "description": ""
+  },
+  {
+    "title": "Count Non Decreasing Arrays With Given Digit Sums",
+    "url": "https://leetcode.com/problems/count-non-decreasing-arrays-with-given-digit-sums/",
+    "description": ""
+  },
+  {
+    "title": "Construct Uniform Parity Array II",
+    "url": "https://leetcode.com/problems/construct-uniform-parity-array-ii/",
+    "description": ""
+  },
+  {
+    "title": "Sum of Sortable Integers",
+    "url": "https://leetcode.com/problems/sum-of-sortable-integers/",
+    "description": ""
+  },
+  {
+    "title": "Construct Uniform Parity Array I",
+    "url": "https://leetcode.com/problems/construct-uniform-parity-array-i/",
+    "description": ""
+  },
+  {
+    "title": "Minimum Absolute Difference Between Two Values",
+    "url": "https://leetcode.com/problems/minimum-absolute-difference-between-two-values/",
+    "description": ""
+  },
+  {
+    "title": "Minimum Cost to Equalize Arrays Using Swaps",
+    "url": "https://leetcode.com/problems/minimum-cost-to-equalize-arrays-using-swaps/",
+    "description": ""
+  },
+  {
+    "title": "First Unique Even Element",
+    "url": "https://leetcode.com/problems/first-unique-even-element/",
+    "description": ""
+  },
+  {
+    "title": "Direction Assignments with Exactly K Visible People",
+    "url": "https://leetcode.com/problems/direction-assignments-with-exactly-k-visible-people/",
+    "description": ""
+  },
+  {
+    "title": "Maximum Requests Without Violating the Limit",
+    "url": "https://leetcode.com/problems/maximum-requests-without-violating-the-limit/",
+    "description": ""
+  },
+  {
+    "title": "Maximum Points Activated with One Addition",
+    "url": "https://leetcode.com/problems/maximum-points-activated-with-one-addition/",
+    "description": ""
+  },
+  {
+    "title": "Count Commas in Range II",
+    "url": "https://leetcode.com/problems/count-commas-in-range-ii/",
+    "description": ""
+  },
+  {
+    "title": "Minimum Capacity Box",
+    "url": "https://leetcode.com/problems/minimum-capacity-box/",
+    "description": ""
+  },
+  {
+    "title": "Count Commas in Range",
+    "url": "https://leetcode.com/problems/count-commas-in-range/",
+    "description": ""
+  },
+  {
+    "title": "Sum of GCD of Formed Pairs",
+    "url": "https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/",
+    "description": ""
+  },
+  {
+    "title": "Unique Email Groups",
+    "url": "https://leetcode.com/problems/unique-email-groups/",
+    "description": ""
+  },
+  {
+    "title": "Find the Smallest Balanced Index",
+    "url": "https://leetcode.com/problems/find-the-smallest-balanced-index/",
+    "description": ""
+  },
+  {
+    "title": "Sum of K-Digit Numbers in a Range",
+    "url": "https://leetcode.com/problems/sum-of-k-digit-numbers-in-a-range/",
+    "description": ""
+  },
+  {
+    "title": "Smallest Pair With Different Frequencies",
+    "url": "https://leetcode.com/problems/smallest-pair-with-different-frequencies/",
+    "description": ""
+  },
+  {
+    "title": "Longest Arithmetic Sequence After Changing At Most One Element",
+    "url": "https://leetcode.com/problems/longest-arithmetic-sequence-after-changing-at-most-one-element/",
+    "description": ""
+  },
+  {
+    "title": "Trim Trailing Vowels",
+    "url": "https://leetcode.com/problems/trim-trailing-vowels/",
+    "description": ""
+  },
+  {
+    "title": "Delayed Count of Equal Elements",
+    "url": "https://leetcode.com/problems/delayed-count-of-equal-elements/",
+    "description": ""
+  },
+  {
+    "title": "Find Users with Persistent Behavior Patterns",
+    "url": "https://leetcode.com/problems/find-users-with-persistent-behavior-patterns/",
+    "description": ""
+  },
+  {
+    "title": "Check Digitorial Permutation",
+    "url": "https://leetcode.com/problems/check-digitorial-permutation/",
+    "description": ""
+  },
+  {
+    "title": "Find the Score Difference in a Game",
+    "url": "https://leetcode.com/problems/find-the-score-difference-in-a-game/",
+    "description": ""
+  },
+  {
+    "title": "Count Good Subarrays",
+    "url": "https://leetcode.com/problems/count-good-subarrays/",
+    "description": ""
+  },
+  {
+    "title": "Longest Almost-Palindromic Substring",
+    "url": "https://leetcode.com/problems/longest-almost-palindromic-substring/",
+    "description": ""
+  },
+  {
+    "title": "Minimum Operations to Sort a String",
+    "url": "https://leetcode.com/problems/minimum-operations-to-sort-a-string/",
+    "description": ""
+  },
+  {
+    "title": "Minimum Operations to Make Array Parity Alternating",
+    "url": "https://leetcode.com/problems/minimum-operations-to-make-array-parity-alternating/",
+    "description": ""
+  },
+  {
+    "title": "Maximum Distinct Path Sum in a Binary Tree",
+    "url": "https://leetcode.com/problems/maximum-distinct-path-sum-in-a-binary-tree/",
+    "description": ""
+  },
+  {
+    "title": "First Element with Unique Frequency",
+    "url": "https://leetcode.com/problems/first-element-with-unique-frequency/",
+    "description": ""
+  },
+  {
+    "title": "Weighted Word Mapping",
+    "url": "https://leetcode.com/problems/weighted-word-mapping/",
+    "description": ""
+  },
+  {
+    "title": "Good Subsequence Queries",
+    "url": "https://leetcode.com/problems/good-subsequence-queries/",
+    "description": ""
+  },
+  {
+    "title": "Count Dominant Indices",
+    "url": "https://leetcode.com/problems/count-dominant-indices/",
+    "description": ""
+  },
+  {
+    "title": "Merge Adjacent Equal Elements",
+    "url": "https://leetcode.com/problems/merge-adjacent-equal-elements/",
+    "description": ""
+  },
+  {
+    "title": "Toggle Light Bulbs",
+    "url": "https://leetcode.com/problems/toggle-light-bulbs/",
+    "description": ""
+  },
+  {
+    "title": "Count Subarrays With Cost Less Than or Equal to K",
+    "url": "https://leetcode.com/problems/count-subarrays-with-cost-less-than-or-equal-to-k/",
+    "description": ""
+  },
+  {
+    "title": "Median of a Binary Search Tree Level",
+    "url": "https://leetcode.com/problems/median-of-a-binary-search-tree-level/",
+    "description": ""
+  },
+  {
+    "title": "Palindromic Path Queries in a Tree",
+    "url": "https://leetcode.com/problems/palindromic-path-queries-in-a-tree/",
+    "description": ""
+  },
+  {
+    "title": "Find Emotionally Consistent Users",
+    "url": "https://leetcode.com/problems/find-emotionally-consistent-users/",
+    "description": ""
+  },
+  {
+    "title": "Good Indices in a Digit String",
+    "url": "https://leetcode.com/problems/good-indices-in-a-digit-string/",
+    "description": ""
+  },
+  {
+    "title": "Minimum XOR Path in a Grid",
+    "url": "https://leetcode.com/problems/minimum-xor-path-in-a-grid/",
+    "description": ""
+  },
+  {
+    "title": "Maximum Subarray XOR with Bounded Range",
+    "url": "https://leetcode.com/problems/maximum-subarray-xor-with-bounded-range/",
+    "description": ""
+  },
+  {
+    "title": "Maximum Score Using Exactly K Pairs",
+    "url": "https://leetcode.com/problems/maximum-score-using-exactly-k-pairs/",
+    "description": ""
+  },
+  {
+    "title": "Design Order Management System",
+    "url": "https://leetcode.com/problems/design-order-management-system/",
+    "description": ""
+  },
+  {
+    "title": "Reverse Letters Then Special Characters in a String",
+    "url": "https://leetcode.com/problems/reverse-letters-then-special-characters-in-a-string/",
+    "description": ""
+  },
+  {
+    "title": "Minimum Prefix Removal to Make Array Strictly Increasing",
+    "url": "https://leetcode.com/problems/minimum-prefix-removal-to-make-array-strictly-increasing/",
+    "description": ""
+  },
+  {
+    "title": "Longest Alternating Subarray After Removing At Most One Element",
+    "url": "https://leetcode.com/problems/longest-alternating-subarray-after-removing-at-most-one-element/",
+    "description": ""
+  },
+  {
+    "title": "Minimum Cost to Repair Edges to Traverse a Graph",
+    "url": "https://leetcode.com/problems/minimum-cost-to-repair-edges-to-traverse-a-graph/",
+    "description": ""
+  },
+  {
+    "title": "Find Users with High Token Usage",
+    "url": "https://leetcode.com/problems/find-users-with-high-token-usage/",
+    "description": ""
+  },
+  {
+    "title": "Count Monobit Integers",
+    "url": "https://leetcode.com/problems/count-monobit-integers/",
+    "description": ""
+  },
+  {
+    "title": "Minimum Cost to Partition a Binary String",
+    "url": "https://leetcode.com/problems/minimum-cost-to-partition-a-binary-string/",
+    "description": ""
+  },
+  {
+    "title": "Minimum Operations to Reach Target Array",
+    "url": "https://leetcode.com/problems/minimum-operations-to-reach-target-array/",
+    "description": ""
+  },
+  {
+    "title": "Find Nth Smallest Integer With K One Bits",
+    "url": "https://leetcode.com/problems/find-nth-smallest-integer-with-k-one-bits/",
+    "description": ""
+  },
+  {
+    "title": "Best Reachable Tower",
+    "url": "https://leetcode.com/problems/best-reachable-tower/",
+    "description": ""
+  },
+  {
+    "title": "Count Residue Prefixes",
+    "url": "https://leetcode.com/problems/count-residue-prefixes/",
+    "description": ""
+  },
+  {
+    "title": "Count Caesar Cipher Pairs",
+    "url": "https://leetcode.com/problems/count-caesar-cipher-pairs/",
+    "description": ""
+  },
+  {
+    "title": "Minimum Edge Toggles on a Tree",
+    "url": "https://leetcode.com/problems/minimum-edge-toggles-on-a-tree/",
+    "description": ""
+  },
+  {
+    "title": "Pythagorean Distance Nodes in a Tree",
+    "url": "https://leetcode.com/problems/pythagorean-distance-nodes-in-a-tree/",
+    "description": ""
+  },
+  {
+    "title": "Largest Even Number",
+    "url": "https://leetcode.com/problems/largest-even-number/",
+    "description": ""
+  },
+  {
+    "title": "Vowel-Consonant Score",
+    "url": "https://leetcode.com/problems/vowel-consonant-score/",
+    "description": ""
+  },
+  {
+    "title": "Reverse String Prefix",
+    "url": "https://leetcode.com/problems/reverse-string-prefix/",
+    "description": ""
+  },
+  {
+    "title": "Minimum K to Reduce Array Within Limit",
+    "url": "https://leetcode.com/problems/minimum-k-to-reduce-array-within-limit/",
+    "description": ""
+  },
+  {
+    "title": "Smallest All-Ones Multiple",
+    "url": "https://leetcode.com/problems/smallest-all-ones-multiple/",
+    "description": ""
+  },
+  {
+    "title": "Maximum Score of a Split",
+    "url": "https://leetcode.com/problems/maximum-score-of-a-split/",
+    "description": ""
+  },
+  {
+    "title": "Sum of Increasing Product Blocks",
+    "url": "https://leetcode.com/problems/sum-of-increasing-product-blocks/",
+    "description": ""
+  },
+  {
+    "title": "Rotate Non Negative Elements",
+    "url": "https://leetcode.com/problems/rotate-non-negative-elements/",
+    "description": ""
+  },
+  {
+    "title": "Total Distance to Type a String Using One Finger",
+    "url": "https://leetcode.com/problems/total-distance-to-type-a-string-using-one-finger/",
+    "description": ""
+  }
+]
